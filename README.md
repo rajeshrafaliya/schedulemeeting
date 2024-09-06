@@ -17,3 +17,11 @@ This Moodle activity plugin allows instructors to schedule meetings for specific
 1. Download the plugin or clone the repository into your Moodle's `mod` directory:
    ```bash
    git clone https://github.com/rajeshrafaliya/schedulemeeting.git mod/schedulemeeting
+
+_____________________________________________________________
+![Choose Schedule Meeting](images/1.png)
+_____________________________________________________________
+![Display in Course Section](images/2.png)
+_____________________________________________________________
+![View in Page](images/3.png)
+_____________________________________________________________
