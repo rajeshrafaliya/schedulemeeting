@@ -17,12 +17,16 @@ class mod_schedulemeeting_mod_form extends moodleform_mod {
         $mform->addRule('name', null, 'required', null, 'client');
 
         // Start Date
-        $mform->addElement('date_selector', 'startdate', get_string('startdate', 'mod_schedulemeeting'));
+        $mform->addElement('date_time_selector', 'startdate', get_string('startdate', 'mod_schedulemeeting'));
         $mform->addRule('startdate', null, 'required', null, 'client');
 
         // End Date
-        $mform->addElement('date_selector', 'enddate', get_string('enddate', 'mod_schedulemeeting'));
+        $mform->addElement('date_time_selector', 'enddate', get_string('enddate', 'mod_schedulemeeting'));
         $mform->addRule('enddate', null, 'required', null, 'client');
+
+        // Set enddate default to the last day of the current month
+        $lastDayOfMonth = mktime(23, 59, 59, date("m") + 1, 0, date("Y"));
+        $mform->setDefault('enddate', $lastDayOfMonth);
 
         $this->standard_coursemodule_elements();
 
