@@ -19,9 +19,18 @@ This Moodle activity plugin allows instructors to schedule meetings for specific
    git clone https://github.com/rajeshrafaliya/schedulemeeting.git mod/schedulemeeting
 
 _____________________________________________________________
+**Choose Schedule Meeting:** Select the "Schedule Meeting" option to set up a new meeting. This will allow you to specify the date, time, and participants for the meeting.
+
 ![Choose Schedule Meeting](images/1.png)
+
 _____________________________________________________________
+**Added Activity Display in Course Section:** New activities will now be displayed in the Course Section. This update helps keep track of ongoing activities related to the course more efficiently.
+
 ![Display in Course Section](images/2.png)
+
 _____________________________________________________________
+**View in Plugin Page, After Click on Activity:** After clicking on an activity, you can view detailed information on the plugin page. This provides a convenient way to access specific details and manage your activities directly.
+
 ![View in Page](images/3.png)
+
 _____________________________________________________________
