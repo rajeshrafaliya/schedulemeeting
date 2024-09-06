@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="mod/schedulemeeting/db" VERSION="2024090800" COMMENT="Schedule Meeting Plugin"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="schedulemeeting" COMMENT="Table for meeting scheduling">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" COMMENT="Primary key for the table"/>
+                <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="Course ID"/>
+                <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" COMMENT="Meeting name"/>                
+                <FIELD NAME="section" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="Section ID"/>
+                <FIELD NAME="startdate" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="Meeting start date (Unix timestamp)"/>
+                <FIELD NAME="enddate" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="Meeting end date (Unix timestamp)"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
